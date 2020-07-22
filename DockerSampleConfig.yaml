@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: kub
-        image: kubrn.azurecr.io/kub:latest
+        image: containerregistrynaam.azurecr.io/kubrepos:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: kub
+  name: dockersampleconfig
 spec:
   type: LoadBalancer
   ports:
